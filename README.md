@@ -9,11 +9,11 @@ Usage:
 - Update the values in there to whatever you want
 - Type this
 
-$ python remote_to_zip.py
+	$ python remote_to_zip.py
 
 - Whatever your zip file name is you passed it, unzip that
 
-$ unzip john.zip
+	$ unzip john.zip
 
 - Done.
 
