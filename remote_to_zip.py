@@ -25,7 +25,8 @@ def zip_from_remote(files, zip_name='out.zip'):
 
 
 files = (
-    ('dialog.png', 'http://s3.amazonaws.com/scrippsmedia/bundles/dialog.png'),
+    ('john.jpg', 'http://johndavidback.com/media/images/john.jpg'),
+    ('sweet-cat.jpg', 'http://placekitten.com/g/200/300'),
 )
 
 zip_from_remote(files, 'john.zip')
