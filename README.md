@@ -5,17 +5,18 @@ This is meant to be a goofy little script that will allow you to come up with a 
 and then add those to a local zip file and save it.
 
 Usage:
-- Download the file
-- Update the values in there to whatever you want
-- Type this
+------
+1. Download the file
+2. Update the values in there to whatever you want
+3. Type this
 
 	$ python remote_to_zip.py
 
-- Whatever your zip file name is you passed it, unzip that
+4. Whatever your zip file name is you passed it, unzip that
 
 	$ unzip john.zip
 
-- Done.
+5. Done.
 
 Why:
 I had a need for it in a project and that was that.  I wanted to share it around so I just grabbed the key parts and
