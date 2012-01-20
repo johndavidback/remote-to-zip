@@ -6,15 +6,18 @@ and then add those to a local zip file and save it.
 
 Usage:
 ------
-Download the file
-Update the values in there to whatever you want
-Type this
+Download the file.
 
-	$ python remote_to_zip.py
+Type this:
+
+    $ python remote_to_zip.py local=remote local=remote
+
+`local` is the filename you want in your ZIP
+`remote` is the location of the remote file, including protocol
 
 Whatever your zip file name is you passed it, unzip that
 
-	$ unzip john.zip
+    $ unzip john.zip
 
 Done.
 

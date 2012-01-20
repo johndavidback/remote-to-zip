@@ -1,4 +1,5 @@
 # This script will take a tuple of URLs and place them in a zip file.
+import sys
 
 import urllib
 import zipfile
@@ -29,4 +30,27 @@ files = (
     ('sweet-cat.jpg', 'http://placekitten.com/g/200/300'),
 )
 
-zip_from_remote(files, 'john.zip')
+#zip_from_remote(files, 'john.zip')
+
+if __name__ == '__main__':
+    # clean arguments
+    files = []
+    for arg in sys.argv:
+        # __file__, you're not an argument. you're silly. get down from there.
+        if arg == __file__:
+            continue
+
+        try:
+            local, remote = arg.split('=')
+        except ValueError:
+            print 'Each argument is local=remote'
+            sys.exit(1)
+
+        files.append((local, remote))
+
+    # well, we don't want to make an empty zip...
+    if len(files) == 0:
+        print 'Need at least one local=remote pair'
+        sys.exit(1)
+
+    zip_from_remote(files)
